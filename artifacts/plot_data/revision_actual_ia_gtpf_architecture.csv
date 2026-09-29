@@ -1,0 +1,12 @@
+,block
+0,"Weighted HGB + ET
++ residual HGB"
+1,"Weighted quantile HGB
+median + same residual"
+2,"Unweighted median
+HGB anchor"
+3,"Unweighted ExtraTrees
+quality features omitted"
+4,Validation-fixed convex blend
+5,Dedicated calibration only
+6,Train-fitted empirical clipping

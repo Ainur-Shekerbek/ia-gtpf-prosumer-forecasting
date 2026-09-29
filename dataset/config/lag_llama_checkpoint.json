@@ -1,0 +1,6 @@
+{
+  "repository": "time-series-foundation-models/Lag-Llama",
+  "revision": "72dcfc29da106acfe38250a60f4ae29d1e56a3d9",
+  "checkpoint": ".cache/experiment/models/LagLlama/lag-llama.ckpt",
+  "sha256": "b5a5c4b8a0cfe9b81bdac35ed5d88b5033cd119b5206c28e9cd67c4b45fb2c96"
+}

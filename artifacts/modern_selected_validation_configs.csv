@@ -1,0 +1,1071 @@
+model,horizon_minutes,seed,phase,learning_rate,hidden,history,n_parameters,epochs_run,best_validation_epoch,best_validation_MAE,training_seconds,peak_rss_mb,n_train_origins,n_train_target_rows,n_validation_origins,n_validation_target_rows,max_epochs,patience,threads,device,precision,architecture_repr,hidden_parameter_used,implementation_scope,memory_sampling_seconds,peak_mps_driver_allocated_mb,memory_note
+GRU-lite,15,11,trial_3,0.001,32,96,4353,30,30,1.2034750025299383,224.9424030840164,246.857728,4000,30838,3801,30803,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 32, batch_first=True)
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,116.310016,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,15,23,selected_seed_repeat,0.001,32,96,4353,23,18,1.212196894258283,183.38863445800962,274.546688,4000,30838,3801,30803,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 32, batch_first=True)
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,116.310016,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,15,37,selected_seed_repeat,0.001,32,96,4353,17,12,1.2201287499597366,131.61921812500805,237.682688,4000,30838,3801,30803,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 32, batch_first=True)
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,116.310016,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,15,53,selected_seed_repeat,0.001,32,96,4353,26,21,1.2008957623994239,196.50138179195346,271.024128,4000,30838,3801,30803,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 32, batch_first=True)
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,116.310016,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,15,71,selected_seed_repeat,0.001,32,96,4353,28,23,1.210262407936245,213.83382304100087,263.553024,4000,30838,3801,30803,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 32, batch_first=True)
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,116.310016,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,15,11,trial_4,0.0003,64,96,39297,30,26,1.2502002372403611,78.69351554202149,346.865664,4000,30838,3801,30803,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 64, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,1185.005568,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,15,23,selected_seed_repeat,0.0003,64,96,39297,19,14,1.2650439533572597,47.14947050000774,264.142848,4000,30838,3801,30803,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 64, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,1185.005568,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,15,37,selected_seed_repeat,0.0003,64,96,39297,21,16,1.2533298657512686,56.72112975001801,274.497536,4000,30838,3801,30803,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 64, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,1185.005568,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,15,53,selected_seed_repeat,0.0003,64,96,39297,25,20,1.2554077548694018,66.78272645798279,248.823808,4000,30838,3801,30803,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 64, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,1185.005568,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,15,71,selected_seed_repeat,0.0003,64,96,39297,28,23,1.2393476790051776,72.4147670409875,263.012352,4000,30838,3801,30803,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 64, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,1185.005568,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,15,11,trial_3,0.001,32,96,206,18,13,1.3584144814457246,20.9885944169946,273.825792,4000,30838,3801,30803,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,117.784576,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,15,23,selected_seed_repeat,0.001,32,96,206,14,9,1.3688604969546898,14.378789208014496,263.929856,4000,30838,3801,30803,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,117.784576,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,15,37,selected_seed_repeat,0.001,32,96,206,17,12,1.3780375903168929,17.62187895801617,268.910592,4000,30838,3801,30803,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,117.784576,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,15,53,selected_seed_repeat,0.001,32,96,206,21,16,2.4786280544803496,22.46186287497403,281.346048,4000,30838,3801,30803,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,117.784576,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,15,71,selected_seed_repeat,0.001,32,96,206,20,15,1.3626887554263687,28.627831291989423,259.915776,4000,30838,3801,30803,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,117.784576,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,15,11,trial_1,0.001,32,32,20193,20,15,1.2800166878039096,50.16699091595365,330.563584,4000,30838,3801,30803,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=32, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+        )
+        (linear1): Linear(in_features=32, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=64, out_features=32, bias=True)
+        (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,157.794304,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,15,23,selected_seed_repeat,0.001,32,32,20193,21,16,1.267593731041315,56.16808795899851,343.2448,4000,30838,3801,30803,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=32, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+        )
+        (linear1): Linear(in_features=32, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=64, out_features=32, bias=True)
+        (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,256.557056,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,15,37,selected_seed_repeat,0.001,32,32,20193,16,11,1.306080246058369,41.08934175001923,271.106048,4000,30838,3801,30803,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=32, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+        )
+        (linear1): Linear(in_features=32, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=64, out_features=32, bias=True)
+        (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,256.557056,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,15,53,selected_seed_repeat,0.001,32,32,20193,28,23,1.2606194613216195,62.595500499999616,269.369344,4000,30838,3801,30803,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=32, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+        )
+        (linear1): Linear(in_features=32, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=64, out_features=32, bias=True)
+        (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,256.557056,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,15,71,selected_seed_repeat,0.001,32,32,20193,13,8,1.31160387419936,28.799799792002887,306.823168,4000,30838,3801,30803,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=32, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=32, out_features=32, bias=True)
+        )
+        (linear1): Linear(in_features=32, out_features=64, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=64, out_features=32, bias=True)
+        (norm1): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,256.557056,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,15,11,trial_2,0.0003,64,32,26817,29,24,1.256752682162528,28.474215375026688,315.736064,4000,30838,3801,30803,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,189.906944,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,15,23,selected_seed_repeat,0.0003,64,32,26817,12,7,1.2783858693660368,11.72880433301907,319.668224,4000,30838,3801,30803,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,189.939712,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,15,37,selected_seed_repeat,0.0003,64,32,26817,25,20,1.2592811293444557,26.18904658302199,285.605888,4000,30838,3801,30803,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,189.939712,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,15,53,selected_seed_repeat,0.0003,64,32,26817,21,16,1.2605455852625327,19.382817750039976,377.962496,4000,30838,3801,30803,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,189.939712,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,15,71,selected_seed_repeat,0.0003,64,32,26817,15,10,1.2731066047651862,14.234150875010528,334.88896,4000,30838,3801,30803,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,189.939712,MPS allocation and RSS share unified RAM; do not add them
+STGCN,15,11,trial_1,0.001,32,32,70689,17,12,1.2529553485002602,68.13744004198816,422.559744,4000,30838,3801,30803,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(32, 64, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,305.627136,MPS allocation and RSS share unified RAM; do not add them
+STGCN,15,23,selected_seed_repeat,0.001,32,32,70689,16,11,1.2712697919319191,56.496429040969815,468.516864,4000,30838,3801,30803,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(32, 64, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,653.328384,MPS allocation and RSS share unified RAM; do not add them
+STGCN,15,37,selected_seed_repeat,0.001,32,32,70689,10,5,1.2983897807044464,35.35688500001561,354.828288,4000,30838,3801,30803,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(32, 64, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,597.508096,MPS allocation and RSS share unified RAM; do not add them
+STGCN,15,53,selected_seed_repeat,0.001,32,32,70689,8,3,1.3001148040715012,28.550534957961645,344.326144,4000,30838,3801,30803,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(32, 64, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,600.899584,MPS allocation and RSS share unified RAM; do not add them
+STGCN,15,71,selected_seed_repeat,0.001,32,32,70689,18,13,1.287836301273732,63.054624249984045,372.441088,4000,30838,3801,30803,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(96, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 64, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 32), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(32, 64, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(32, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,597.508096,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,60,11,trial_2,0.0003,64,32,14849,30,28,1.620793693366736,99.59555104200263,342.933504,4000,30824,3798,30779,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 64, batch_first=True)
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,574.521344,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,60,23,selected_seed_repeat,0.0003,64,32,14849,30,30,1.6317186065885019,117.46258854103507,296.517632,4000,30824,3798,30779,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 64, batch_first=True)
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,574.521344,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,60,37,selected_seed_repeat,0.0003,64,32,14849,30,30,1.6442912717192273,108.17729083297309,283.230208,4000,30824,3798,30779,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 64, batch_first=True)
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,574.521344,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,60,53,selected_seed_repeat,0.0003,64,32,14849,30,30,1.6435348732343886,110.16611474996898,299.433984,4000,30824,3798,30779,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 64, batch_first=True)
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,574.521344,MPS allocation and RSS share unified RAM; do not add them
+GRU-lite,60,71,selected_seed_repeat,0.0003,64,32,14849,30,30,1.6351449337381767,107.80700108298333,297.713664,4000,30824,3798,30779,30,5,4,mps,float32,"GRULite(
+  (gru): GRU(11, 64, batch_first=True)
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,574.521344,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,60,11,trial_3,0.001,32,96,10433,19,14,1.6626440200847803,37.15083620900987,373.9648,4000,30824,3798,30779,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 32, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,643.448832,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,60,23,selected_seed_repeat,0.001,32,96,10433,9,4,1.712445318615612,16.898696209012996,362.397696,4000,30824,3798,30779,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 32, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,643.514368,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,60,37,selected_seed_repeat,0.001,32,96,10433,8,3,1.69919271700571,14.859425625007134,377.749504,4000,30824,3798,30779,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 32, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,643.514368,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,60,53,selected_seed_repeat,0.001,32,96,10433,9,4,1.6872534024219283,16.913177583017386,392.085504,4000,30824,3798,30779,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 32, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,643.514368,MPS allocation and RSS share unified RAM; do not add them
+TCN-lite,60,71,selected_seed_repeat,0.001,32,96,10433,23,18,1.696942219380503,44.268551208020654,379.158528,4000,30824,3798,30779,30,5,4,mps,float32,"TCNLite(
+  (net): Sequential(
+    (0): CausalConv(
+      (conv): Conv1d(11, 32, kernel_size=(3,), stride=(1,), padding=(2,))
+    )
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(2,))
+    )
+    (4): ReLU()
+    (5): Dropout(p=0.1, inplace=False)
+    (6): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(8,), dilation=(4,))
+    )
+    (7): ReLU()
+    (8): Dropout(p=0.1, inplace=False)
+    (9): CausalConv(
+      (conv): Conv1d(32, 32, kernel_size=(3,), stride=(1,), padding=(16,), dilation=(8,))
+    )
+    (10): ReLU()
+    (11): Dropout(p=0.1, inplace=False)
+  )
+  (head): Linear(in_features=32, out_features=1, bias=True)
+)",True,Documented compact architecture,0.05,643.514368,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,60,11,trial_3,0.001,32,96,206,14,9,1.76956201446324,14.731803875009064,360.300544,4000,30824,3798,30779,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,544.063488,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,60,23,selected_seed_repeat,0.001,32,96,206,13,8,1.8016947169932727,13.230556541995611,388.644864,4000,30824,3798,30779,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,544.063488,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,60,37,selected_seed_repeat,0.001,32,96,206,20,15,1.8005470591425845,20.65291945799254,393.035776,4000,30824,3798,30779,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,544.063488,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,60,53,selected_seed_repeat,0.001,32,96,206,15,10,2.775889640299215,15.254346291010734,318.849024,4000,30824,3798,30779,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,544.063488,MPS allocation and RSS share unified RAM; do not add them
+DLinear-lite,60,71,selected_seed_repeat,0.001,32,96,206,17,12,1.7842655162674328,16.700651541992556,314.032128,4000,30824,3798,30779,30,5,4,mps,float32,"DLinearLite(
+  (trend): Linear(in_features=96, out_features=1, bias=True)
+  (season): Linear(in_features=96, out_features=1, bias=True)
+  (combine): Linear(in_features=11, out_features=1, bias=True)
+)",False,Documented compact architecture,0.05,544.063488,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,60,11,trial_2,0.0003,64,32,73153,18,13,1.6815395389307646,47.0436154580093,458.063872,4000,30824,3798,30779,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=64, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,585.105408,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,60,23,selected_seed_repeat,0.0003,64,32,73153,20,15,1.6618943955722525,47.86435229203198,407.9616,4000,30824,3798,30779,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=64, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,596.21376,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,60,37,selected_seed_repeat,0.0003,64,32,73153,19,14,1.6669372639897282,47.51069012499647,295.010304,4000,30824,3798,30779,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=64, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,592.019456,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,60,53,selected_seed_repeat,0.0003,64,32,73153,15,10,1.6627623910865819,37.74021025002003,336.986112,4000,30824,3798,30779,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=64, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,592.019456,MPS allocation and RSS share unified RAM; do not add them
+PatchTST-lite,60,71,selected_seed_repeat,0.0003,64,32,73153,19,14,1.6789919324210754,47.6003859579796,342.818816,4000,30824,3798,30779,30,5,4,mps,float32,"PatchTSTLite(
+  (proj): Linear(in_features=88, out_features=64, bias=True)
+  (encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-1): 2 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=64, out_features=64, bias=True)
+        )
+        (linear1): Linear(in_features=64, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=128, out_features=64, bias=True)
+        (norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (head): Linear(in_features=64, out_features=1, bias=True)
+)",True,Joint-feature patch Transformer inspired by PatchTST; compact variant,0.05,592.019456,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,60,11,trial_2,0.0003,64,32,26817,16,11,1.6741830476361597,12.940682084008586,429.080576,4000,30824,3798,30779,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,516.521984,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,60,23,selected_seed_repeat,0.0003,64,32,26817,19,14,1.6742815944572853,16.272831499984022,424.42752,4000,30824,3798,30779,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,516.521984,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,60,37,selected_seed_repeat,0.0003,64,32,26817,19,14,1.684426468705073,16.4260482499958,307.77344,4000,30824,3798,30779,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,516.521984,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,60,53,selected_seed_repeat,0.0003,64,32,26817,15,10,1.6799557580287594,11.604763792012818,298.68032,4000,30824,3798,30779,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,516.521984,MPS allocation and RSS share unified RAM; do not add them
+GraphTemporalMLP-lite,60,71,selected_seed_repeat,0.0003,64,32,26817,13,8,1.6783647946537716,10.255789624992758,305.39776,4000,30824,3798,30779,30,5,4,mps,float32,"GraphTemporalMLPLite(
+  (net): Sequential(
+    (0): Linear(in_features=352, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Linear(in_features=64, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Linear(in_features=64, out_features=1, bias=True)
+  )
+)",True,Documented compact architecture,0.05,516.521984,MPS allocation and RSS share unified RAM; do not add them
+STGCN,60,11,trial_2,0.0003,64,32,251905,12,7,1.6830241374559867,55.389324000047054,451.149824,4000,30824,3798,30779,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(64, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(64, 128, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,1659.666432,MPS allocation and RSS share unified RAM; do not add them
+STGCN,60,23,selected_seed_repeat,0.0003,64,32,251905,15,10,1.6933834170492665,74.4400132499868,448.315392,4000,30824,3798,30779,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(64, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(64, 128, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,1733.26336,MPS allocation and RSS share unified RAM; do not add them
+STGCN,60,37,selected_seed_repeat,0.0003,64,32,251905,21,16,1.6683191940013635,103.02127708302578,409.534464,4000,30824,3798,30779,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(64, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(64, 128, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,1659.86304,MPS allocation and RSS share unified RAM; do not add them
+STGCN,60,53,selected_seed_repeat,0.0003,64,32,251905,19,14,1.697300496283104,91.84757600002922,349.47072,4000,30824,3798,30779,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(64, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(64, 128, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,1661.140992,MPS allocation and RSS share unified RAM; do not add them
+STGCN,60,71,selected_seed_repeat,0.0003,64,32,251905,14,9,1.6892849536019383,69.69458395801485,386.383872,4000,30824,3798,30779,30,5,4,mps,float32,"STGCN(
+  (blocks): Sequential(
+    (0): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(11, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(11, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+    (1): STBlock(
+      (temp1): TemporalGLU(
+        (conv): Conv2d(64, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Identity()
+      )
+      (graph): ChebGraph(
+        (proj): Conv2d(192, 16, kernel_size=(1, 1), stride=(1, 1))
+        (res): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (temp2): TemporalGLU(
+        (conv): Conv2d(16, 128, kernel_size=(3, 1), stride=(1, 1))
+        (res): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (norm): LayerNorm((9, 64), eps=1e-05, elementwise_affine=True)
+      (drop): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output): Sequential(
+    (0): TemporalGLU(
+      (conv): Conv2d(64, 128, kernel_size=(24, 1), stride=(1, 1))
+      (res): Identity()
+    )
+    (1): Conv2d(64, 1, kernel_size=(1, 1), stride=(1, 1))
+  )
+)",True,Two-block Chebyshev STGCN reimplementation,0.05,1659.86304,MPS allocation and RSS share unified RAM; do not add them

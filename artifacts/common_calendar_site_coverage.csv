@@ -1,0 +1,12 @@
+site,start_utc,end_utc,available_rows,required_channels
+industrial1,2015-11-28 05:45:00+00:00,2017-10-12 22:00:00+00:00,65730,DE_KN_industrial1_grid_import
+industrial2,2016-02-22 02:00:00+00:00,2017-06-06 00:00:00+00:00,45113,DE_KN_industrial2_grid_import
+industrial3,2016-02-11 09:15:00+00:00,2017-06-04 22:00:00+00:00,46036,DE_KN_industrial3_grid_import
+public1,2016-05-17 10:00:00+00:00,2016-11-22 23:00:00+00:00,18197,DE_KN_public1_grid_import
+public2,2016-12-01 13:45:00+00:00,2017-01-17 08:15:00+00:00,4491,DE_KN_public2_grid_import
+residential1,2015-05-21 15:30:00+00:00,2017-03-12 23:00:00+00:00,63487,DE_KN_residential1_grid_import
+residential2,2015-04-15 09:15:00+00:00,2017-02-01 14:30:00+00:00,63190,DE_KN_residential2_grid_import
+residential3,2016-02-28 17:15:00+00:00,2017-07-08 16:00:00+00:00,47612,DE_KN_residential3_grid_import;DE_KN_residential3_grid_export
+residential4,2015-10-10 16:30:00+00:00,2018-02-04 23:00:00+00:00,81435,DE_KN_residential4_grid_import;DE_KN_residential4_grid_export
+residential5,2015-10-26 11:30:00+00:00,2019-05-01 22:00:00+00:00,123211,DE_KN_residential5_grid_import
+residential6,2016-05-13 13:30:00+00:00,2018-04-08 22:00:00+00:00,66755,DE_KN_residential6_grid_import;DE_KN_residential6_grid_export

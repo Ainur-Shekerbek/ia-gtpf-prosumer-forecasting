@@ -1,0 +1,9 @@
+split,horizon_minutes,sites,feature_rows,measured_targets,supplier_marked_targets,anomalous_current_intervals
+train,15,9,125469,107410,5686,0
+train,60,9,125469,107387,5683,0
+validation,15,9,34218,30803,858,0
+validation,60,9,34218,30779,858,0
+calibration,15,9,34218,30976,1114,2
+calibration,60,9,34218,30950,1114,2
+test,15,9,34227,32527,174,6
+test,60,9,34227,32504,174,6

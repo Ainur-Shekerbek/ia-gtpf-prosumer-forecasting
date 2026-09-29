@@ -1,0 +1,17 @@
+,condition,value,model,horizon_minutes,MAE
+0,high_interpolation_regime,0,ExtraTrees,15,1.0004279692618716
+1,high_interpolation_regime,0,ExtraTrees,60,1.5922629731540208
+2,high_interpolation_regime,0,IA-GTPF,15,0.9797554922446338
+3,high_interpolation_regime,0,IA-GTPF,60,1.4020810508762842
+4,high_interpolation_regime,1,ExtraTrees,15,1.0567794289040147
+5,high_interpolation_regime,1,ExtraTrees,60,1.2161936173038514
+6,high_interpolation_regime,1,IA-GTPF,15,1.157416795511315
+7,high_interpolation_regime,1,IA-GTPF,60,1.053223169110548
+8,weak_signal_regime,0,ExtraTrees,15,0.8444986632095217
+9,weak_signal_regime,0,ExtraTrees,60,1.2986628799895699
+10,weak_signal_regime,0,IA-GTPF,15,0.8341071457981849
+11,weak_signal_regime,0,IA-GTPF,60,1.170255916030385
+12,weak_signal_regime,1,ExtraTrees,15,1.5382042186863174
+13,weak_signal_regime,1,ExtraTrees,60,2.5593840785276414
+14,weak_signal_regime,1,IA-GTPF,15,1.4901711655558156
+15,weak_signal_regime,1,IA-GTPF,60,2.1603926346228306

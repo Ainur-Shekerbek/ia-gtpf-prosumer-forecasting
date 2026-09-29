@@ -1,0 +1,9 @@
+*.ipynb text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.png binary
+*.zip binary
+*.gz binary
+*.parquet binary
+dataset/OPSD_README.md -text

@@ -1,0 +1,292 @@
+[
+  {
+    "name": "original_data/DE_KN_residential_001/phptimeseries/feed_56.MYD",
+    "size": 4352913,
+    "compressed": 1836505,
+    "offset": 214230958,
+    "crc": 3452684794,
+    "site": "residential1",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_001/phptimeseries/feed_59.MYD",
+    "size": 4352796,
+    "compressed": 1459806,
+    "offset": 217383537,
+    "crc": 3230275111,
+    "site": "residential1",
+    "channel": "pv",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_001/phptimeseries/feed_62.MYD",
+    "size": 4351230,
+    "compressed": 1397404,
+    "offset": 220075283,
+    "crc": 3647973397,
+    "site": "residential1",
+    "channel": "heat_pump",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_002/phptimeseries/feed_25.MYD",
+    "size": 5082894,
+    "compressed": 1760286,
+    "offset": 235702871,
+    "crc": 3782733012,
+    "site": "residential2",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_003/phptimeseries/feed_138.MYD",
+    "size": 4301172,
+    "compressed": 1509285,
+    "offset": 273110301,
+    "crc": 4168508060,
+    "site": "residential3",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_003/phptimeseries/feed_135.MYD",
+    "size": 9971208,
+    "compressed": 2828376,
+    "offset": 267839777,
+    "crc": 1387538262,
+    "site": "residential3",
+    "channel": "grid_export",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_003/phptimeseries/feed_141.MYD",
+    "size": 9555129,
+    "compressed": 2960425,
+    "offset": 279530399,
+    "crc": 2325350483,
+    "site": "residential3",
+    "channel": "pv",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_004/phptimeseries/feed_43.MYD",
+    "size": 3682890,
+    "compressed": 1425813,
+    "offset": 372259007,
+    "crc": 2274037321,
+    "site": "residential4",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_004/phptimeseries/feed_40.MYD",
+    "size": 3722949,
+    "compressed": 1337902,
+    "offset": 369470026,
+    "crc": 2855367081,
+    "site": "residential4",
+    "channel": "grid_export",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_004/phptimeseries/feed_46.MYD",
+    "size": 6973830,
+    "compressed": 2370580,
+    "offset": 375255098,
+    "crc": 2136363452,
+    "site": "residential4",
+    "channel": "pv",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_004/phptimeseries/feed_53.MYD",
+    "size": 6816357,
+    "compressed": 1771483,
+    "offset": 385898196,
+    "crc": 3872850149,
+    "site": "residential4",
+    "channel": "ev",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_004/phptimeseries/feed_49.MYD",
+    "size": 3794139,
+    "compressed": 1243404,
+    "offset": 380074204,
+    "crc": 3512866780,
+    "site": "residential4",
+    "channel": "heat_pump",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_005/phptimeseries/feed_40.MYD",
+    "size": 9630567,
+    "compressed": 3467990,
+    "offset": 418859892,
+    "crc": 1360063134,
+    "site": "residential5",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_006/phptimeseries/feed_40.MYD",
+    "size": 9473211,
+    "compressed": 3129797,
+    "offset": 481643291,
+    "crc": 357803573,
+    "site": "residential6",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_006/phptimeseries/feed_62.MYD",
+    "size": 8983467,
+    "compressed": 2229900,
+    "offset": 510127246,
+    "crc": 2014947772,
+    "site": "residential6",
+    "channel": "grid_export",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_residential_006/phptimeseries/feed_43.MYD",
+    "size": 9413424,
+    "compressed": 2870309,
+    "offset": 487123806,
+    "crc": 3286998230,
+    "site": "residential6",
+    "channel": "pv",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_public_001/phptimeseries/feed_40.MYD",
+    "size": 534267,
+    "compressed": 273589,
+    "offset": 198060874,
+    "crc": 1531859532,
+    "site": "public1",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_public_002/phptimeseries/feed_40.MYD",
+    "size": 464004,
+    "compressed": 216345,
+    "offset": 198759942,
+    "crc": 183812543,
+    "site": "public2",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_001/phptimeseries/feed_25.MYD",
+    "size": 6083631,
+    "compressed": 2651804,
+    "offset": 3930742,
+    "crc": 1739824336,
+    "site": "industrial1",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_001/phptimeseries/feed_43.MYD",
+    "size": 2596914,
+    "compressed": 1035648,
+    "offset": 21342121,
+    "crc": 741888967,
+    "site": "industrial1",
+    "channel": "pv_1",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_001/phptimeseries/feed_46.MYD",
+    "size": 2815092,
+    "compressed": 1134292,
+    "offset": 23226588,
+    "crc": 2651165243,
+    "site": "industrial1",
+    "channel": "pv_2",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_002/phptimeseries/feed_25.MYD",
+    "size": 5197491,
+    "compressed": 1972701,
+    "offset": 35483559,
+    "crc": 651712765,
+    "site": "industrial2",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_002/phptimeseries/feed_46.MYD",
+    "size": 4595373,
+    "compressed": 1507866,
+    "offset": 53251231,
+    "crc": 1821794747,
+    "site": "industrial2",
+    "channel": "pv",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_002/phptimeseries/feed_52.MYD",
+    "size": 5040936,
+    "compressed": 1649584,
+    "offset": 57781267,
+    "crc": 3430292583,
+    "site": "industrial2",
+    "channel": "storage_charge",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_002/phptimeseries/feed_55.MYD",
+    "size": 5041584,
+    "compressed": 1257388,
+    "offset": 60902623,
+    "crc": 1949925210,
+    "site": "industrial2",
+    "channel": "storage_decharge",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_003/phptimeseries/feed_25.MYD",
+    "size": 5396913,
+    "compressed": 2291478,
+    "offset": 106531823,
+    "crc": 2065863930,
+    "site": "industrial3",
+    "channel": "grid_import",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_003/phptimeseries/feed_43.MYD",
+    "size": 5825556,
+    "compressed": 1912505,
+    "offset": 125113191,
+    "crc": 3487403698,
+    "site": "industrial3",
+    "channel": "pv_roof",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_003/phptimeseries/feed_46.MYD",
+    "size": 5825565,
+    "compressed": 1782406,
+    "offset": 128914655,
+    "crc": 259313918,
+    "site": "industrial3",
+    "channel": "pv_facade",
+    "unit": "kWh"
+  },
+  {
+    "name": "original_data/DE_KN_industrial_003/phptimeseries/feed_100.MYD",
+    "size": 4573431,
+    "compressed": 948568,
+    "offset": 99707370,
+    "crc": 653150503,
+    "site": "industrial3",
+    "channel": "ev",
+    "unit": "kWh"
+  }
+]

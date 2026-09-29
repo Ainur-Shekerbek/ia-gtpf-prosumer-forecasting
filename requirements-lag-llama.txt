@@ -1,0 +1,13 @@
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.17.1
+scikit-learn==1.8.0
+torch==2.11.0
+pyarrow==24.0.0
+gluonts==0.14.4
+lightning==2.1.4
+pytorch-lightning==2.1.4
+pydantic==2.8.2
+huggingface-hub==0.36.2
+wandb==0.30.0
+lag-llama @ git+https://github.com/time-series-foundation-models/lag-llama.git@df7531a83a19b3c6a0222d703ca9bf59ef7a6ab9

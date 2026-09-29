@@ -1,0 +1,74 @@
+{
+  "revision": "raw_causal_v1",
+  "sites": [
+    "industrial1",
+    "industrial2",
+    "industrial3",
+    "residential1",
+    "residential2",
+    "residential3",
+    "residential4",
+    "residential5",
+    "residential6"
+  ],
+  "excluded_primary_sites": [
+    "public1",
+    "public2"
+  ],
+  "cohort_reason": "No 11-site common interval; industrial/residential nine-site common cohort selected from availability, not outcomes.",
+  "splits": [
+    {
+      "split": "train",
+      "start": "2016-05-13 13:45:00+00:00",
+      "end": "2016-10-05 18:45:00+00:00"
+    },
+    {
+      "split": "validation",
+      "start": "2016-10-05 19:00:00+00:00",
+      "end": "2016-11-14 09:15:00+00:00"
+    },
+    {
+      "split": "calibration",
+      "start": "2016-11-14 09:30:00+00:00",
+      "end": "2016-12-23 23:45:00+00:00"
+    },
+    {
+      "split": "test",
+      "start": "2016-12-24 00:00:00+00:00",
+      "end": "2017-02-01 14:30:00+00:00"
+    }
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "n_origins": 5,
+  "horizons": [
+    1,
+    4
+  ],
+  "max_endpoint_age_seconds": 180,
+  "lags": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    92,
+    95,
+    96
+  ],
+  "rolling_windows": [
+    4,
+    16,
+    96
+  ],
+  "graph_neighbors": 4,
+  "threads": 4,
+  "alpha": 0.1,
+  "target_definition": "Rate from the two most recent original cumulative snapshots at successive 15-minute calendar boundaries, divided by their actual elapsed duration. Endpoints are at most 180 s old. This is measurement-derived, asynchronously aligned interval power, not an exact synchronous 15-minute energy measurement."
+}
